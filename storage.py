@@ -6,12 +6,12 @@ import pynput
 
 # Storage functions
 def save_data(data, filename="task_data.json"):
-    with open(filename, "w") as f:
+    with open(nameoffile, "w") as f:
         json.dump(data, f)
 
 def load_data(filename="task_data.json"):
     try:
-        with open(filename, "r") as f:
+        with open(nameoffile, "r") as f:
             return json.load(f)
     except FileNotFoundError:
         return {}
