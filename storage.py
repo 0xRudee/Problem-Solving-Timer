@@ -5,11 +5,11 @@ import threading
 import pynput
 
 # Storage functions
-def save_data(data, filename="task_data.json"):
+def save_data(data, nameoffile="task_data.json"):
     with open(nameoffile, "w") as f:
         json.dump(data, f)
 
-def load_data(filename="task_data.json"):
+def load_data(nameoffile="task_data.json"):
     try:
         with open(nameoffile, "r") as f:
             return json.load(f)
