@@ -1,7 +1,7 @@
 import time
 import json
 import threading
-from pynput import keyboard
+import pynput
 
 # Storage functions
 def save_data(data, filename="task_data.json"):
